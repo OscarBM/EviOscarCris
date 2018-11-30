@@ -20,8 +20,9 @@
 
             <Button
                 android:id="@+id/btnHome3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Home"/>
             <EditText
                 android:id="@+id/edtSearch2"
                 android:layout_width="wrap_content"
