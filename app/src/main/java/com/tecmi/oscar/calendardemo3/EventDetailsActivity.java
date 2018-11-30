@@ -33,6 +33,7 @@ public class EventDetailsActivity extends AppCompatActivity implements View.OnCl
     private Button btnSearch3;
     private Button btnNewEvent;
     private Button btnList1;
+    private Button btnHome;
 
     private EditText edtSearch1;
 
@@ -60,6 +61,7 @@ public class EventDetailsActivity extends AppCompatActivity implements View.OnCl
         btnSearch3 = (Button)findViewById(R.id.btnSearch2);
         btnNewEvent = (Button)findViewById(R.id.btnAddEvent);
         btnList1 = (Button)findViewById(R.id.btnList);
+        btnHome = (Button)findViewById(R.id.btnHome3);
 
         edtSearch1 = (EditText)findViewById(R.id.edtSearch2);
 
@@ -68,6 +70,7 @@ public class EventDetailsActivity extends AppCompatActivity implements View.OnCl
         btnSearch3.setOnClickListener(this);
         btnNewEvent.setOnClickListener(this);
         btnList1.setOnClickListener(this);
+        btnHome.setOnClickListener(this);
 
 
 
@@ -253,6 +256,9 @@ public class EventDetailsActivity extends AppCompatActivity implements View.OnCl
         } else if (v.getId() == btnList1.getId()){
             Intent intent = new Intent(getApplication(), ListActivity.class);//Se crea la intent para poder cambiar de pantalla
             startActivity(intent);//Se ejecuta la intent para pasar a la pantalla de Lista de eventos (ListActivity.java)
-        }
+        } else if (v.getId() == btnHome.getId()){
+            Intent intent = new Intent(getApplication(), MainActivity.class);
+            startActivity(intent);
+        } else {finish();}
     }
 }
