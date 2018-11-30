@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/mainGreen">
+
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Añada su busqueda..."
+                android:textColor="#FFFFFF"
+                android:maxLines="1"
+                android:inputType="text"
+                />
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Q"
+                android:textSize="20dp"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"
+                android:onClick="onClickSearch"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+            <TextView
+                android:id="@+id/tvMainToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="hola"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <CalendarView
+            android:id="@+id/clvMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            ></CalendarView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lista de eventos"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:background="@color/mainRed"
+                android:textColor="#FFFFFF"
+                android:onClick="onClickListEvents"
+                android:layout_margin="12sp"/>
+            <Button
+                android:id="@+id/btnNewEvent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="+"
+                android:textSize="45dp"
+                android:textAlignment="center"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"
+                android:onClick="onClickNewEvent"
+                android:layout_margin="5sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

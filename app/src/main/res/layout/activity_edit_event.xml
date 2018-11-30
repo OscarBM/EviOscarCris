@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEventActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/mainGreen">
+
+            <Button
+                android:id="@+id/btnHome3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <EditText
+                android:id="@+id/edtSearch2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Añada su busqueda..."
+                android:textColor="#FFFFFF"
+                android:maxLines="1"
+                />
+            <Button
+                android:id="@+id/btnSearch2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Q"
+                android:textSize="20dp"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="@color/mainGreen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar evento"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="12sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Titulo:"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese titulo..."/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="12sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ubicación:"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese ubicación..."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAlarmOn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"
+                android:text="Si"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnAlarmOff"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"
+                android:text="No"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="12sp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio:"
+                    android:textSize="30dp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fin:"
+                    android:textSize="30dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textSize="30dp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:id="@+id/edtStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="dd/mm/aaaa"
+                    />
+                <EditText
+                    android:id="@+id/edtEndtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="dd/mm/aaaa"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hora:"
+                    android:textSize="30dp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:id="@+id/edtStartHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:hint="hora:minuto"
+                    />
+                <EditText
+                    android:id="@+id/edtEndHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:hint="hora:minuto"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="12sp"/>
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Introduzca descripción..."
+            android:layout_marginHorizontal="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista de eventos"
+                android:layout_weight="1"
+                android:background="@color/mainRed"
+                android:textColor="#FFFFFF"
+                android:layout_margin="12sp"/>
+            <Button
+                android:id="@+id/btnAddEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listo"
+                android:background="@color/mainGreen"
+                android:textColor="#FFFFFF"
+                android:layout_margin="12sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCancelEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:background="@color/mainRed"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="right"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
